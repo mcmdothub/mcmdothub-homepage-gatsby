@@ -5,8 +5,8 @@ import Img from 'gatsby-image'
 import { Button } from './Button'
 import { ImLocation } from 'react-icons/im'
 
-const Trips = ({heading}) => {
-    const data  = useStaticQuery(graphql`
+const Trips = ({ heading }) => {
+    const data = useStaticQuery(graphql`
         query TripsQuery {
             allTripsJson {
                 edges {
@@ -32,18 +32,19 @@ const Trips = ({heading}) => {
         data.allTripsJson.edges.forEach((item, index) => {
             tripsArray.push(
                 <ProductCard key={index}>
-                    <ProductImg src={item.node.img.childImageSharp.fluid.src}
-                    alt={item.node.alt}
-                    fluid={item.node.img.childImageSharp.fluid} />
+                    <ProductImg
+                        // src={item.node.img.childImageSharp.fluid.src}
+                        alt={item.node.alt}
+                        fluid={item.node.img.childImageSharp.fluid} />
 
                     <ProductInfo>
-                       <TextWrap>
+                        <TextWrap>
                             <ImLocation />
                             <ProductTitle>{item.node.name}</ProductTitle>
-                       </TextWrap> 
-                       <Button to="/trips" primary="true" round="true" css={`position: absolute; top: 420px; font_size: 14px;`}>
-                           {item.node.button}
-                       </Button>
+                        </TextWrap>
+                        <Button to="/trips" primary="true" round="true" css={`position: absolute; top: 420px; font_size: 14px;`}>
+                            {item.node.button}
+                        </Button>
                     </ProductInfo>
                 </ProductCard>
             )
