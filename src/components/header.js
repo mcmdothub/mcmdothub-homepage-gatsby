@@ -1,27 +1,36 @@
-import * as React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components'
-import { FaBars} from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 import { menuData } from '../data/MenuData'
 import { Button } from "./Button"
 
-const Header = () => {
+const Header = ({ toggle }) => {
+
+  const [navbar, setNavbar] = useState(false)
+
+  useEffect(() => {
+    if (window.location.pathname) {
+      setNavbar(window.location.pathname)
+    }
+  }, [])
   return (
-    <Nav>
-      <NavLink to="/">MCMDOTHUB</NavLink>
-      <Bars />
+
+    <Nav navbar={navbar}>
+      <NavLink to="/">EXPLORIX</NavLink>
+      <Bars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
+
           <NavLink to={item.link} key={index}>
             {item.title}
           </NavLink>
         ))}
       </NavMenu>
-
       <NavBtn>
-        <Button primary={true} round={true} to="/trips">
+        <Button primary="true" round="true" to="/trips">
           Book a Flight
-        </Button>
+      </Button>
       </NavBtn>
     </Nav>
   )
@@ -30,13 +39,13 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-  background: transparent;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1300px) / 2);
-  z-index: 100;
-  position: relative;
+background: ${({ navbar }) => (navbar !== "/" ? "#141414" : "transparent")};
+height: 80px;
+display: flex;
+justify-content: space-between;
+padding:0.5rem calc((100vw - 1300px)/2);
+z-index:100;
+position:relative;
 `
 
 const NavLink = styled(Link)`

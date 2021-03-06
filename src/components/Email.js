@@ -1,37 +1,48 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import EmailBg from '../assets/images/emailBackground_Large.jpg'
 import { Button } from './Button'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Email = () => {
+
+    useEffect(() => {
+        Aos.init({})
+    }, [])
+
     return (
         <EmailContainer>
             <EmailContent>
-                <h1>Get Access to Exclusive Offers</h1>
-                <p>Sign up for your newsletter bellow to get $100
-                    off your first trip!</p>
+                <h1 data-aos="fade-down"
+                    data-aos-delay="50"
+                    data-aos-duration="1000">Get Access to Exclusive Offers</h1>
+                <p data-aos="fade-down"
+                    data-aos-delay="100"
+                    data-aos-duration="1000">Sign up for your newsletter below to get $100 off your
+                    first trip!
+                </p>
 
                 <form action="#">
-                    <FormWrap>
-                        <label htmlFor="email">
-                            <input type="email" placeholder="Enter your email" id="email" />
+                    <FormWrap data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="1000">
+                        <label htmlFor="email" >
+                            <input type="email" placeholder="Enter your Email" id="email" />
                         </label>
-
                         <Button as="button" type="submit" primary="true" round="true"
-                            css={`
-                                    height: 48px;
+                        css={`
+                        height: 48px;
 
-                                    @media screen and (max-width: 768px) {
-                                        width: 100%;
-                                        min-width: 350px;
-                                    }
-                                    @media screen and (max-width: 400px) {
-                                        width: 100%;
-                                        min-width: 250px;
-                                    }
-                                `}>
-                            Sign Up
-                        </Button>
+                        @media screen and (max-width: 768px){
+                            width: 100%;
+                            min-width: 350px;
+                        }
+                        @media screen and (max-width: 400px){
+                            width: 100%;
+                            min-width: 250px;
+                        }
+                        `}>Sign Up</Button> 
                     </FormWrap>
                 </form>
             </EmailContent>
