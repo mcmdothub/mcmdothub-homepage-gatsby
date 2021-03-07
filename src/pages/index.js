@@ -6,7 +6,6 @@ import Trips from '../components/Trips'
 import Testimonials from '../components/Testimonials'
 import Stats from '../components/Stats'
 import Email from "../components/Email"
-import NotFoundPage from "./404"
 import Metadata from "../components/metadata"
 
 const IndexPage = () => (
@@ -18,7 +17,6 @@ const IndexPage = () => (
     <Testimonials />
     <Stats />
     <Email />
-    <NotFoundPage />  
   </Layout>
 )
 
