@@ -17,7 +17,7 @@ const Header = ({ toggle }) => {
   return (
 
     <Nav navbar={navbar}>
-      <NavLink to="/">EXPLORIX</NavLink>
+      <NavLink to="/">MCMDOTHUB</NavLink>
       <Bars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (

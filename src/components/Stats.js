@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 
 
@@ -33,22 +33,32 @@ import styled from 'styled-components'
 
 // Solution with Json from StatsData.js
 import { StatsData } from '../data/StatsData'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Stats = () => {
+
+    useEffect(() => {
+        Aos.init({})
+            },[])
+
     return (
         <StatsContainer>
-            <Heading>Why Choose Us?</Heading>
-            <Wrapper>
-                {StatsData.map((item, index) => {
-                    return (
-                       <StatsBox key={index}>
-                           <Icon>{item.icon}</Icon>
-                           <Title>{item.title}</Title>
-                           <Description>{item.desc}</Description>
-                       </StatsBox> 
-                    )
-                })}
-            </Wrapper>
+            <Heading data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="1000">Why Choose Us?</Heading>
+            <Wrapper>{StatsData.map((item, index) => {
+                return (
+                    <StatsBox key={index} 
+                    data-aos="fade-right"
+                    data-aos-delay="150"
+                    data-aos-duration="1000">
+                        <Icon>{item.icon}</Icon>
+                        <Title>{item.title}</Title>
+                        <Description>{item.desc}</Description>
+                    </StatsBox>
+                )
+            })}</Wrapper>
         </StatsContainer>
     )
 }
