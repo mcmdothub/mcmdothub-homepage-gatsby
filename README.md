@@ -31,9 +31,9 @@ Made with Gatsby JS.
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd mcmdothub-homepage/
-    npm-install
-	npm-start
+    cd mcmdothub-homepage-gatsby/
+    npm init gatsby
+	  npm run develop
     ```
 
 ## 🧐 What's inside?
