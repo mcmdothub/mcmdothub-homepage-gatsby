@@ -48,11 +48,11 @@ A quick look.
 
 ![2 - About](https://user-images.githubusercontent.com/55764189/110318536-e59af500-800d-11eb-9d8a-40a4c47b9dc3.png)
 
-2.  **`/testimonials`** 
+3.  **`/testimonials`** 
 
 ![3 - Testimonials](https://user-images.githubusercontent.com/55764189/110318550-e764b880-800d-11eb-955b-181534d93008.png)
 
-2.  **`/contact`** 
+4.  **`/contact`** 
 
 ![4 - Contact](https://user-images.githubusercontent.com/55764189/110318555-e9c71280-800d-11eb-9ee3-f3ef1d50cea5.png)
 
