@@ -32,8 +32,8 @@ Made with Gatsby JS.
 
     ```shell
     cd mcmdothub-homepage-gatsby/
-    npm init gatsby
-	  npm run develop
+  npm init gatsby
+ npm run develop
     ```
 
 ## 🧐 What's inside?
