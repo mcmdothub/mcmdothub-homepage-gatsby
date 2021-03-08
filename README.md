@@ -42,19 +42,19 @@ A quick look.
 
 1.  **`/home`**
 
-![1 - Home](https://user-images.githubusercontent.com/55764189/110316938-b97e7480-800b-11eb-9873-f88e9031f0f1.png)
+![1 - Home](https://user-images.githubusercontent.com/55764189/110318523-e3389b00-800d-11eb-956e-071ebe6437e6.png)
 
 2.  **`/about`** 
 
-![2 - About](https://user-images.githubusercontent.com/55764189/110316948-bc796500-800b-11eb-90b3-383eb0237a96.png)
+![2 - About](https://user-images.githubusercontent.com/55764189/110318536-e59af500-800d-11eb-9d8a-40a4c47b9dc3.png)
 
 2.  **`/testimonials`** 
 
-![3 - Testimonials](https://user-images.githubusercontent.com/55764189/110316954-bedbbf00-800b-11eb-99d6-039b0d139f8a.png)
+![3 - Testimonials](https://user-images.githubusercontent.com/55764189/110318550-e764b880-800d-11eb-955b-181534d93008.png)
 
 2.  **`/contact`** 
 
-![4 - Contact](https://user-images.githubusercontent.com/55764189/110316963-c1d6af80-800b-11eb-8292-5f628974992a.png)
+![4 - Contact](https://user-images.githubusercontent.com/55764189/110318555-e9c71280-800d-11eb-9ee3-f3ef1d50cea5.png)
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
